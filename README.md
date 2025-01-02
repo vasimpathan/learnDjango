@@ -94,6 +94,7 @@ path('about-us/',views.about,name="about")
 
 # To display the image from project
 project/
+<pre>
 ├── manage.py
 ├── project1/
 │   ├── settings.py
@@ -103,6 +104,7 @@ project/
 │   ├── bandmember.jpg
 ├── templates/
 │   ├── index.html
+</pre>
 1. Open settings.py
 	STATIC_URL = 'static/'
 	STATICFILES_DIRS = [
