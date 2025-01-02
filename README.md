@@ -29,21 +29,17 @@ In macOs/Linux
 
 - Folder structure
 - mysite --> directory (we can change the directory name)
-<ul>
-	<li>
-		mysite --> our project name
-		<ul>
-			<li>__phcache__ folder</li>
-			<li>__init__.py</li>
-			<li>asgi.py</li>
-			<li>settings.py</li>
-			<li>urls.py ----> We can add here our urls</li>
-			<li>wsgi.py</li>
-		</ul>
-	</li>
-	<li>manage.py --> Utility file which help us to intract with django project</li>
-	<li>db.sqlite3</li>
-</ul>
+	<pre>
+	|mysite
+	├── manage.py
+	├── project1/
+	│   ├── settings.py
+	│   ├── urls.py
+	│   ├── __init__.py
+	│   ├── asgi.py.py
+	│   ├── ...
+	</pre>
+
 8. To run the project 
 - django/mysite/mysite> python manage.py runserver
 (Note : Which give us a one server with IP like http://127.0.0.0:8000)
@@ -56,10 +52,10 @@ In macOs/Linux
 10. Simple code to create function and access it from urls.py file
 from django.http import HttpResponse
 def index(request):
-- <pre>return HttpResponse("<h1>Hello World</h1>")</pre>
+<pre>return HttpResponse("<h1>Hello World</h1>")</pre>
 
 def about(request):
-- <pre>return HttpResponse("<h1>About Us page</h1>")</pre>
+<pre>return HttpResponse("<h1>About Us page</h1>")</pre>
 
 11. Open urls.py file and create the url
 from django.urls import path
