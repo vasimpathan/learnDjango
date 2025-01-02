@@ -102,13 +102,15 @@ project/
 │   ├── index.html
 </pre>
 1. Open settings.py
+2. <pre>
 	STATIC_URL = 'static/'
 	STATICFILES_DIRS = [
 		os.path.join(BASE_DIR, "static"),
 	]
 	STATIC_ROOT = os.path.join(BASE_DIR, "staticfiles")
-2. Create the static folder inside project1 <your project name>
-3. Add image there or add with create folder. eg. abc.jpg
-4. Go to your html file add line to starting of html 
+	</pre>
+3. Create the static folder inside project1 <your project name>
+4. Add image there or add with create folder. eg. abc.jpg
+5. Go to your html file add line to starting of html 
    - {% load static %}
    - <img src="{% static 'abc.jpg' %}">
