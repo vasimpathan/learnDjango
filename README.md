@@ -31,28 +31,19 @@ In macOs/Linux
 - mysite --> directory (we can change the directory name)
 <ul>
 	<li>
-		mysite
+		mysite --> our project name
 		<ul>
 			<li>__phcache__ folder</li>
 			<li>__init__.py</li>
 			<li>asgi.py</li>
 			<li>settings.py</li>
-			<li>urls.py</li>
+			<li>urls.py ----> We can add here our urls</li>
 			<li>wsgi.py</li>
 		</ul>
 	</li>
-	<li>manage.py</li>
+	<li>manage.py --> Utility file which help us to intract with django project</li>
 	<li>db.sqlite3</li>
 </ul>
-|__mysite --> our project name
-|   |___init__.py
-|   |___asgi.py
-|   |___settings.py  
-|   |___urls.py      ----> We can add here our urls
-|   |___wsgi.py
-|
-|__manage.py --> Utility file which help us to intract with django project
-
 8. To run the project 
 - django/mysite/mysite> python manage.py runserver
 (Note : Which give us a one server with IP like http://127.0.0.0:8000)
