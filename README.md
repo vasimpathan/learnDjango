@@ -1,7 +1,7 @@
 
 # Environment create & activate
 1. Create a Virtual Environment
-   - python -m venv venv
+- python -m venv venv
 
 2. Activate the Virtual Environment
 In Window
@@ -29,7 +29,21 @@ In macOs/Linux
 
 - Folder structure
 - mysite --> directory (we can change the directory name)
-\n
+<ul>
+	<li>
+		mysite
+		<ul>
+			<li>__phcache__ folder</li>
+			<li>__init__.py</li>
+			<li>asgi.py</li>
+			<li>settings.py</li>
+			<li>urls.py</li>
+			<li>wsgi.py</li>
+		</ul>
+	</li>
+	<li>manage.py</li>
+	<li>db.sqlite3</li>
+</ul>
 |__mysite --> our project name
 |   |___init__.py
 |   |___asgi.py
