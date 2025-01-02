@@ -56,10 +56,10 @@ In macOs/Linux
 10. Simple code to create function and access it from urls.py file
 from django.http import HttpResponse
 def index(request):
-- return HttpResponse("<h1>Hello World</h1>")
+- <pre>return HttpResponse("<h1>Hello World</h1>")</pre>
 
 def about(request):
-- return HttpResponse("<h1>About Us page</h1>")
+- <pre>return HttpResponse("<h1>About Us page</h1>")</pre>
 
 11. Open urls.py file and create the url
 from django.urls import path
