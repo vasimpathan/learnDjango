@@ -74,3 +74,43 @@ path('about-us/',views.about,name="about")
 12. Run server and enter url 
 	http://127.00.00/8000
 	http://127.00.00/8000/about-us
+
+# Django Templates
+- Go to settings.py
+- Find 'DIRS': [] in TEMPLATES json object
+- Add 'templates' inside DIRS['templates] --> it is the our template folder
+- Create the 'template' folder parallel to manage.py and create in that index.html file
+  <ul>
+	<li>templates</li>
+	<ul>
+		<li>index.html</li>
+		<li>aboutus.html</li>
+	</ul>
+  </ul>
+- Open views.py file and add 
+  - from django.shortcuts import render
+  - def index(request):
+    return render("index.html")
+
+# To display the image from project
+project/
+├── manage.py
+├── project1/
+│   ├── settings.py
+│   ├── urls.py
+│   ├── ...
+├── static/
+│   ├── bandmember.jpg
+├── templates/
+│   ├── index.html
+1. Open settings.py
+	STATIC_URL = 'static/'
+	STATICFILES_DIRS = [
+		os.path.join(BASE_DIR, "static"),
+	]
+	STATIC_ROOT = os.path.join(BASE_DIR, "staticfiles")
+2. Create the static folder inside project1 <your project name>
+3. Add image there or add with create folder. eg. abc.jpg
+4. Go to your html file add line to starting of html 
+   - {% load static %}
+   - <img src="{% static 'abc.jpg' %}">
